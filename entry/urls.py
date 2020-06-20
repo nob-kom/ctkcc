@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import EntryListAPIView
+from .views import EntryListCreateAPIView
 
 urlpatterns = [
-    path('entries/', EntryListAPIView.as_view()),
+    path('entries/', EntryListCreateAPIView.as_view()),
 ]

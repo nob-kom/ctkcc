@@ -5,7 +5,7 @@ from .models import Entry
 from .serializers import EntrySerializer
 
 # Create your views here.
-class EntryListAPIView(generics.ListAPIView):
+class EntryListCreateAPIView(generics.ListCreateAPIView):
     permission_classes = (AllowAny,)
     serializer_class = EntrySerializer
     queryset = Entry.objects.all()
