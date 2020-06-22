@@ -21,6 +21,6 @@ from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('entry.urls')), # APIへのルーティング
+    path('api/', include('entry.urls')), # テストAPIへのルーティング
     path('', index, name='index'), # vueシングルページアプリへのルーティング
 ] + static(settings.STATIC_URL) # staticディレクトリにルーティング
