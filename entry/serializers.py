@@ -1,15 +1,5 @@
 from rest_framework import serializers
-from .models import Entry, User
-
-class EntrySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Entry
-        fields = (
-            'id',
-            'title',
-            'content',
-            'date'
-        )
+from .models import User
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

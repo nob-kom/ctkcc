@@ -8,11 +8,6 @@ TOWER_CHOICES = (
     (3, 'C')
 )
 
-class Entry(models.Model):
-    title = models.CharField(max_length=200)
-    content = models.TextField()
-    date = models.DateField()
-
 class User(models.Model):
     tower = models.IntegerField(choices=TOWER_CHOICES)
     room_number = models.IntegerField()
